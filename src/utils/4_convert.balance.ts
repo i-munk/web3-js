@@ -7,7 +7,8 @@ export const fromWei = (balance: Numbers) => {
         - Web3 공식문서에서 'fromWei'를 검색하여 기능을 구현하여 주세요.
   */
 
-  const convertBalance = FILL_ME_IN;
+  // Convert wei to ether
+  const convertBalance = web3.utils.fromWei(balance.toString(), 'ether');
 
   return convertBalance;
 };
